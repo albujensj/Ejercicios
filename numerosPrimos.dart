@@ -19,7 +19,9 @@ void verificarPrimo(){
   int cantNum = int.parse(stdin.readLineSync()!);
   
   for (var i = 0; i < cantNum; i++) {
-    numeros.add(i);
+    print('Ingresa el número ${i + 1}:');
+    int num = int.parse(stdin.readLineSync()!);
+    numeros.add(num);
   }
 
   List<int> primos = [];
